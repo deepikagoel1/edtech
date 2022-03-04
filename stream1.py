@@ -21,10 +21,6 @@ def recommend(course):
 
     return recommended_course_names
 
-st.markdown("<h2 style='text-align: center; color: blue;'>Coursera Course Recommendation System</h2>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: black;'>Find similar courses from a dataset of over 3,000 courses from Coursera!</h4>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: black;'>Web App created by Sagar Bapodara</h4>", unsafe_allow_html=True)
-
 course_list = courses_list['course_name'].values
 selected_course = st.selectbox(
     "Type or select a course you like :",
